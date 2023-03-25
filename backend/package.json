@@ -4,7 +4,7 @@
   "description": "Proyecto realizado con MEAN Crud Sencillo",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "CsSuar",
