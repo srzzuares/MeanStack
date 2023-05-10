@@ -17,7 +17,7 @@ APPLICATION.set('runServer', (req, res) => {
 APPLICATION.use(express.json())
 APPLICATION.use(express.urlencoded({extended:false}))
 APPLICATION.use(morgan('dev'))
-APPLICATION.use(require('./Routes/Arte.Routes'))
+APPLICATION.use(require('./Routes/Salary.Routes'))
 //https://github.com/Juandiego001/aplicacion-full-stack
 //Exports
 module.exports = APPLICATION;

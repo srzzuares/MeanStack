@@ -1,0 +1,24 @@
+GET http://localhost:3030/ HTTP/1.1
+
+###
+
+GET http://localhost:3030/obtAct/2 HTTP/1.1
+
+###
+POST http://localhost:3030/create HTTP/1.1
+content-type: application/json
+{
+    "Id_Salary": "0",
+    "Time": "2023-01-22 18:49:36.202",
+    "Position": "Backend Developer",
+    "Level": "Mid",
+    "Experience": "1-3 Yil",
+    "Technology": "Java / Spring",
+    "Location": "Türkiye",
+    "Way_of_working": "Yerinde / Ofiste",
+    "Employees_number": "100-300",
+    "Salary_type": "Türk Liras",
+    "Salary": "41.000 - 45.000 TL"
+}
+
+###
