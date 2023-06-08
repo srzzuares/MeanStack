@@ -1,5 +1,6 @@
 //Require Packages
 const express = require('express')
+const cors = require('cors')
 const morgan = require('morgan')
 const path = require('path')
 const viewPath = path.join(__dirname, '/views/')
@@ -14,6 +15,7 @@ APP.set('runServer', (req, res) => {
     console.log(`listening on port http://localhost:${APP.get('PORT')}`)
 })
 //Middlewares
+APP.use(cors())
 APP.use(express.json())
 APP.use(express.urlencoded({extended:false}))
 APP.use(morgan('dev'))
